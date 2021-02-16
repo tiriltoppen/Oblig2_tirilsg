@@ -214,7 +214,7 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let {name, age, add} = obj
+		let {name, age, add} = obj;
 
 		// Don't make changes below this line	
 		
