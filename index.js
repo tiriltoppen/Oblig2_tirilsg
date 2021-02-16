@@ -194,7 +194,7 @@ try {
 		a = b;
 		b = tmp; */
 
-		const dupa = [a = 2, b = 1]
+		[a, b] = [b, a]
 
 		// Don't make changes below this line	
 		
@@ -214,7 +214,7 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		const [name, age, add] = [obj.name, obj.age, obj.add]
+		let {name, age, add} = obj
 
 		// Don't make changes below this line	
 		
@@ -294,7 +294,7 @@ try {
 		let obj = { val: 1 };
 		
 		// Use Object Spread Properties to let the tests succeed.
-		let copy = {...obj, val: 1};
+		let copy = {...obj};
 
 		// Don't make changes below this line	
 		
@@ -317,7 +317,7 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { ...obj1, ...obj2, ...obj3, b: 0, d: 100 };
+		let result = { ...obj1, ...obj3, ...obj2 };
 
 		// Don't make changes below this line	
 		
